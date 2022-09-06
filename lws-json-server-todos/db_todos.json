@@ -20,7 +20,7 @@
     },
     {
       "text": "Learn Redux Basics",
-      "completed": true,
+      "completed": false,
       "id": 4,
       "color": "red"
     },
@@ -44,11 +44,6 @@
       "text": "Test",
       "completed": false,
       "id": 8
-    },
-    {
-      "text": "hdjhdjhdjsdh",
-      "completed": false,
-      "id": 9
     }
   ]
 }

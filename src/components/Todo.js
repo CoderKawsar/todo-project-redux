@@ -61,7 +61,7 @@ export default function Todo({ todo }) {
           />
           <button
             type="submit"
-            className="absolute top-0 right-0 cursor-pointer"
+            className="absolute top-0 -right-6 cursor-pointer shadow-md h-full bg-green-100"
           >
             <img src={doneImg} alt="Edit" className="w-6 p-1" />
           </button>

@@ -1,10 +1,44 @@
 {
   "todos": [
     {
+      "id": 1,
+      "text": "Learn Vanilla JavaScript",
+      "completed": false,
+      "color": "red"
+    },
+    {
+      "id": 2,
+      "text": "Learn Modern ES6+ JavaScript",
+      "completed": false,
+      "color": "red"
+    },
+    {
+      "id": 3,
+      "text": "Learn React JS",
+      "completed": true,
+      "color": "yellow"
+    },
+    {
       "text": "Learn Redux Basics",
       "completed": false,
       "id": 4,
       "color": "red"
+    },
+    {
+      "text": "Learn Redux fundamentals",
+      "completed": false,
+      "id": 5,
+      "color": "red"
+    },
+    {
+      "text": "learn Redux",
+      "completed": true,
+      "id": 6
+    },
+    {
+      "text": "Learn Redux Toolkit",
+      "completed": false,
+      "id": 7
     },
     {
       "text": "Test",
@@ -12,19 +46,21 @@
       "id": 8
     },
     {
-      "text": "Test 1",
+      "text": "Learn Redux from LWS",
       "completed": false,
-      "id": 9
-    },
-    {
-      "text": "Test 2",
-      "completed": true,
       "id": 10
     },
     {
-      "text": "Test",
+      "text": "Hudai vungvangs",
       "completed": false,
-      "id": 11
+      "id": 11,
+      "color": "red"
+    },
+    {
+      "text": "Don't know what to do!",
+      "completed": true,
+      "id": 12,
+      "color": "green"
     }
   ]
 }

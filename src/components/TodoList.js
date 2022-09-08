@@ -4,29 +4,17 @@ import fetchTodos from "../redux/todos/thunk/fetchTodos";
 import Todo from "./Todo";
 
 export default function TodoList() {
-  const todos = useSelector((state) => state.todos).filter(
-    (todo) => !todo.completed
-  );
+  const todos = useSelector((state) => state.todos);
+  let uncompletedTodos;
+  if (todos) {
+    uncompletedTodos = todos.filter((todo) => !todo.completed);
+  }
   const filters = useSelector((state) => state.filters);
   const dispatch = useDispatch();
 
   useEffect(() => {
     dispatch(fetchTodos);
   }, [dispatch]);
-
-  const filterByStatus = (todo) => {
-    const { status } = filters;
-    switch (status) {
-      case "Complete":
-        return todo.completed;
-
-      case "Incomplete":
-        return !todo.completed;
-
-      default:
-        return true;
-    }
-  };
 
   const filterByColors = (todo) => {
     const { colors } = filters;
@@ -38,12 +26,10 @@ export default function TodoList() {
 
   return (
     <div className="mt-2 text-gray-700 text-sm max-h-[300px] overflow-y-auto">
-      {todos
-        .filter(filterByStatus)
-        .filter(filterByColors)
-        .map((todo) => (
-          <Todo todo={todo} key={todo.id} />
-        ))}
+      {todos &&
+        uncompletedTodos
+          .filter(filterByColors)
+          .map((todo) => <Todo todo={todo} key={todo.id} />)}
     </div>
   );
 }

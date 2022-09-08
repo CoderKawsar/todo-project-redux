@@ -19,7 +19,7 @@
       "color": "yellow"
     },
     {
-      "text": "Learn Redux Basics",
+      "text": "Learn Redux Basic",
       "completed": false,
       "id": 4,
       "color": "red"
@@ -42,7 +42,7 @@
     },
     {
       "text": "Test",
-      "completed": false,
+      "completed": true,
       "id": 8
     },
     {
@@ -51,14 +51,14 @@
       "id": 10
     },
     {
-      "text": "Hudai vungvangs",
+      "text": "Hudai vungvang",
       "completed": false,
       "id": 11,
       "color": "red"
     },
     {
       "text": "Don't know what to do!",
-      "completed": true,
+      "completed": false,
       "id": 12,
       "color": "green"
     }

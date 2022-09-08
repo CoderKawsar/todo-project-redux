@@ -4,7 +4,7 @@ import updateStatus from "../redux/todos/thunk/updateStatus";
 
 function CompletedTodos() {
   const dispatch = useDispatch();
-  const todosCompleted = useSelector((state) => state.todos).filter(
+  const todosCompleted = useSelector((state) => state.todos)?.filter(
     (todos) => todos.completed
   );
 
